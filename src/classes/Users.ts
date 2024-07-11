@@ -1,9 +1,9 @@
-class Users {
+export class Users {
     id: number;
     name: string;
     email: string;
-    avatar: URL;
-    constructor(id: number, name: string, email:string, avatar:URL){
+    avatar: string;
+    constructor(id: number, name: string, email:string, avatar:string){
         this.id = id;
         this.name = name;
         this.email = email;

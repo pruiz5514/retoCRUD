@@ -1,5 +1,4 @@
-"use strict";
-class ListUsers {
+export class ListUsers {
     constructor(container) {
         this.container = container;
     }
@@ -10,7 +9,8 @@ class ListUsers {
         const img = document.createElement("img");
         h4.innerText = name;
         p.innerText = email;
-        img.src = avatar.href;
+        img.src = avatar;
         cardContianer.append(h4, p, img);
+        this.container.append(cardContianer);
     }
 }
