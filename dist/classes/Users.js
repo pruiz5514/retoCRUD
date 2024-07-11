@@ -5,4 +5,6 @@ export class Users {
         this.email = email;
         this.avatar = avatar;
     }
+    static createUser() {
+    }
 }
